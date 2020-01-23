@@ -1,3 +1,16 @@
+" cscope 配置 quickfix 窗口 "
+set cscopequickfix=s-,c-,d-,i-,t-,e-
+" 添加 cscope 索引 "
+cs add /work/src/cscope.out /work/src/kernel
+" 添加 ctags 库 "
+set tags=/work/src/tags
+set number
+set encoding=utf-8
+syntax enable
+syntax on
+colorscheme desert
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
 set wildmenu
 set number
 set nocompatible
@@ -151,4 +164,4 @@ syntax on
     nmap <C-@><C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 
     " replace string
-    nmap <C-\>r :%s/ostr/nstr/g
+
